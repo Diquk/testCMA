@@ -1,0 +1,60 @@
+.patient-card {
+  width: 50%;
+  padding: 0 1rem;
+}
+
+.patient-card__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.patient-card__top:hover {
+  transform: scale(1.1);
+}
+
+.patient-card__bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  min-height: 400px;
+}
+
+.patient-card__image-box {
+  margin-bottom: 1rem;
+  width: 300px;
+  height: 300px;
+  filter: drop-shadow(0px 4px 25px rgba(6, 140, 166, 0.25));
+}
+
+.patient-card__name {
+  margin-top: 1rem;
+  color: #028ca6;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.patient-card__case {
+  margin: 0;
+  padding: 0.9rem;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  color: #223867;
+  background: rgba(255, 255, 255, 0.7);
+  border: 2px solid #068ca6;
+  box-shadow: 0px 4px 4px rgba(6, 140, 166, 0.31);
+  border-radius: 10px;
+}
+
+@media (max-width: 1264px) {
+  .patient-card {
+    width: 100%;
+  }
+
+  .patient-card__bottom {
+    min-height: fit-content;
+  }
+}
